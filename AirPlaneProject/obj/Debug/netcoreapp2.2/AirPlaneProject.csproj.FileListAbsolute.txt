@@ -1,0 +1,11 @@
+C:\Users\Kay\source\repos\AirPlaneProject\AirPlaneProject\bin\Debug\netcoreapp2.2\AirPlaneProject.deps.json
+C:\Users\Kay\source\repos\AirPlaneProject\AirPlaneProject\bin\Debug\netcoreapp2.2\AirPlaneProject.runtimeconfig.json
+C:\Users\Kay\source\repos\AirPlaneProject\AirPlaneProject\bin\Debug\netcoreapp2.2\AirPlaneProject.runtimeconfig.dev.json
+C:\Users\Kay\source\repos\AirPlaneProject\AirPlaneProject\bin\Debug\netcoreapp2.2\AirPlaneProject.dll
+C:\Users\Kay\source\repos\AirPlaneProject\AirPlaneProject\bin\Debug\netcoreapp2.2\AirPlaneProject.pdb
+C:\Users\Kay\source\repos\AirPlaneProject\AirPlaneProject\obj\Debug\netcoreapp2.2\AirPlaneProject.csprojAssemblyReference.cache
+C:\Users\Kay\source\repos\AirPlaneProject\AirPlaneProject\obj\Debug\netcoreapp2.2\AirPlaneProject.csproj.CoreCompileInputs.cache
+C:\Users\Kay\source\repos\AirPlaneProject\AirPlaneProject\obj\Debug\netcoreapp2.2\AirPlaneProject.AssemblyInfoInputs.cache
+C:\Users\Kay\source\repos\AirPlaneProject\AirPlaneProject\obj\Debug\netcoreapp2.2\AirPlaneProject.AssemblyInfo.cs
+C:\Users\Kay\source\repos\AirPlaneProject\AirPlaneProject\obj\Debug\netcoreapp2.2\AirPlaneProject.dll
+C:\Users\Kay\source\repos\AirPlaneProject\AirPlaneProject\obj\Debug\netcoreapp2.2\AirPlaneProject.pdb

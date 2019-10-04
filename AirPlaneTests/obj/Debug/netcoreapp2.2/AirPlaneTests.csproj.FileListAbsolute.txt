@@ -1,0 +1,17 @@
+C:\Users\Kay\source\repos\AirPlaneProject\AirPlaneTests\obj\Debug\netcoreapp2.2\AirPlaneTests.csprojAssemblyReference.cache
+C:\Users\Kay\source\repos\AirPlaneProject\AirPlaneTests\obj\Debug\netcoreapp2.2\AirPlaneTests.csproj.CoreCompileInputs.cache
+C:\Users\Kay\source\repos\AirPlaneProject\AirPlaneTests\obj\Debug\netcoreapp2.2\AirPlaneTests.AssemblyInfoInputs.cache
+C:\Users\Kay\source\repos\AirPlaneProject\AirPlaneTests\obj\Debug\netcoreapp2.2\AirPlaneTests.AssemblyInfo.cs
+C:\Users\Kay\source\repos\AirPlaneProject\AirPlaneTests\bin\Debug\netcoreapp2.2\NUnit3.TestAdapter.dll
+C:\Users\Kay\source\repos\AirPlaneProject\AirPlaneTests\bin\Debug\netcoreapp2.2\NUnit3.TestAdapter.pdb
+C:\Users\Kay\source\repos\AirPlaneProject\AirPlaneTests\bin\Debug\netcoreapp2.2\nunit.engine.netstandard.dll
+C:\Users\Kay\source\repos\AirPlaneProject\AirPlaneTests\bin\Debug\netcoreapp2.2\AirPlaneTests.deps.json
+C:\Users\Kay\source\repos\AirPlaneProject\AirPlaneTests\bin\Debug\netcoreapp2.2\AirPlaneTests.runtimeconfig.json
+C:\Users\Kay\source\repos\AirPlaneProject\AirPlaneTests\bin\Debug\netcoreapp2.2\AirPlaneTests.runtimeconfig.dev.json
+C:\Users\Kay\source\repos\AirPlaneProject\AirPlaneTests\bin\Debug\netcoreapp2.2\AirPlaneTests.dll
+C:\Users\Kay\source\repos\AirPlaneProject\AirPlaneTests\bin\Debug\netcoreapp2.2\AirPlaneTests.pdb
+C:\Users\Kay\source\repos\AirPlaneProject\AirPlaneTests\bin\Debug\netcoreapp2.2\AirPlaneProject.dll
+C:\Users\Kay\source\repos\AirPlaneProject\AirPlaneTests\bin\Debug\netcoreapp2.2\AirPlaneProject.pdb
+C:\Users\Kay\source\repos\AirPlaneProject\AirPlaneTests\obj\Debug\netcoreapp2.2\AirPlaneTests.csproj.CopyComplete
+C:\Users\Kay\source\repos\AirPlaneProject\AirPlaneTests\obj\Debug\netcoreapp2.2\AirPlaneTests.dll
+C:\Users\Kay\source\repos\AirPlaneProject\AirPlaneTests\obj\Debug\netcoreapp2.2\AirPlaneTests.pdb
