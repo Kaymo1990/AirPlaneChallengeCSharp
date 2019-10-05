@@ -4,8 +4,21 @@ using System.Text;
 
 namespace AirPlaneProject
 {
-    class Airport
+    public class Airport
     {
-        public List<string> PlaneHanger { get; set; }
+        private readonly IList<Airplane> planeHanger = new List<Airplane>();
+
+        public IEnumerable<Airplane> PlaneHanger
+        {
+            get
+            {
+                return this.planeHanger;
+            }
+        }
+
+        public void AcceptPlane(Airplane airplane)
+        {
+            this.planeHanger.Add(airplane);
+        }
     }
 }

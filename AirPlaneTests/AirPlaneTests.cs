@@ -22,7 +22,10 @@ namespace Tests
 
         public void Airport_ShouldAcceptPlaneInHanger_AddPlaneToAirportHanger()
         {
-
+            var airPlane = new Airplane();
+            var airport = new Airport();
+            airport.AcceptPlane(airPlane);
+            Assert.IsInstanceOf(typeof(Airplane), airport.PlaneHanger[0])
         }
     }
 }
