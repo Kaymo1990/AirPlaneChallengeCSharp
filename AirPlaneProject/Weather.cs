@@ -4,12 +4,20 @@ using System.Text;
 
 namespace AirPlaneProject
 {
-    class Weather
+    public class Weather
     {
-        public static bool IsStormy()
-        {
-            bool isStormy = Random.value
-                > 0.5f;
+        public static bool IsStormy(int stormyChance)
+            { 
+            var randomWeatherChance = new Random();
+            if (randomWeatherChance.NextDouble() >= stormyChance)
+            {
+                return true;
+            }
+
+            else
+            {
+                return false;
+            }
         }
     }
 }

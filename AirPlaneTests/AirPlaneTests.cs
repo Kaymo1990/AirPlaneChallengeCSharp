@@ -91,5 +91,15 @@ namespace Tests
         {
             Assert.AreEqual("Test", airport.airportLocation);
         }
+
+        [Test] public void IsStormy_ShouldBeTrue_WhenStormy()
+        {
+            Assert.IsTrue(Weather.IsStormy(0));
+        }
+
+        [Test] public void IsStormy_ShouldBeFalse_WhenNotStormy()
+        {
+            Assert.IsFalse(Weather.IsStormy(1));
+        }
     }
 }
