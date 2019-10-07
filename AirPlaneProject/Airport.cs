@@ -6,6 +6,13 @@ namespace AirPlaneProject
 {
     public class Airport
     {
+        private string airport;
+        public Airport(string airportName)
+        {
+            airport = airportName;
+        }
+
+        public string airportLocation { get => airport; set => airport = value; }
         public List<Airplane> planeHanger
         {
             get { return planeHanger; }

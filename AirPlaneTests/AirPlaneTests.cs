@@ -35,10 +35,16 @@ namespace Tests
         public void Airport_ShouldAcceptPlaneInHanger_AddPlaneToAirportHanger()
         {
             var airPlane = new Airplane();
-            var airport = new Airport();
+            var airport = new Airport("Test");
             airport.AcceptPlane(airPlane);
             airport.AcceptPlane(airPlane);
             Assert.IsInstanceOf(typeof(Airplane), airport.planeHanger[1]);
+        }
+
+        public void Airport_ShouldHaveName_WhenInstantiated()
+        {
+            var airport = new Airport("Test");
+            Assert.AreEqual("Test", airport.airportLocation);
         }
     }
 }
