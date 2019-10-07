@@ -33,5 +33,10 @@ namespace AirPlaneProject
         {
             this.planeHanger.Add(airplane);
         }
+
+        public void EjectPlane(Airplane airplane)
+        {
+            this.planeHanger.Remove(airplane);
+        }
     }
 }

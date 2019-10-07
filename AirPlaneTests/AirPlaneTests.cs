@@ -19,20 +19,42 @@ namespace Tests
 
         [Test] public void Land_ShouldReturnLanded_WhenCalled()
         {
-            Assert.AreEqual("Landed", airplane.land(airport));
+            Assert.AreEqual("Landed", airplane.Land(airport));
+        }
+
+        [Test] public void TakeOff_ShouldRemovePlaneFromAirport_AirportHangerCount0()
+        {
+            airplane.Land(airport);
+            airplane.TakeOff(airport);
+            Assert.AreEqual(0, airport.PlaneHanger.Count);
         }
 
         [Test]
-        public void Land_ShouldUpdatePlaneLocation_ToTestWhenCalled()
+        public void TakeOff_ShouldUpdatePlaneLocation_ToBlank()
         {
-            airplane.land(airport);
+            airplane.Land(airport);
+            airplane.TakeOff(airport);
+            Assert.AreEqual("", airplane.CurrentAirport);
+        }
+
+        [Test]
+        public void TakeOff_ShouldUpdatePlaneStatus_ToFlying()
+        {
+            airplane.Land(airport);
+            airplane.TakeOff(airport);
+            Assert.AreEqual("Flying", airplane.PlaneStatus);
+        }
+
+        [Test] public void Land_ShouldUpdatePlaneLocation_ToTestWhenCalled()
+        {
+            airplane.Land(airport);
             Assert.AreEqual("Test", airplane.CurrentAirport);
         }
 
         [Test]
         public void Land_ShouldUpdateAirportHanger_ToHave1Plane()
         {
-            airplane.land(airport);
+            airplane.Land(airport);
             Assert.IsInstanceOf(typeof(Airplane), airport.PlaneHanger.ElementAt(0));
         }
 
@@ -51,6 +73,13 @@ namespace Tests
             airport.AcceptPlane(airplane);
             airport.AcceptPlane(airplane);
             Assert.IsInstanceOf(typeof(Airplane), airport.PlaneHanger.ElementAt(1));
+        }
+
+        [Test] public void EjectPlane_ShouldRemovePlane_HangerCountShouldReturn0()
+        {
+            airport.AcceptPlane(airplane);
+            airport.EjectPlane(airplane);
+            Assert.AreEqual(0, airport.PlaneHanger.Count);
         }
         [Test] public void Airport_ShouldHaveName_WhenInstantiated()
         {
