@@ -3,35 +3,32 @@ using NUnit.Framework;
 
 namespace Tests
 {
+
     public class Tests
     {
         Airplane plane = new Airplane();
-        [SetUp]
-        public void Setup()
-        {
 
-        }
-        [Category("Airplane Tests")]
         [Test]
         public void Land_ShouldReturnLanded_WhenCalled()
         {
             Assert.AreEqual("Landed", plane.land());
         }
 
+        [Test]
         public void PlaneStatus_ShouldBeFlying_WhenCalled()
         {
             var airplane = new Airplane();
             Assert.AreEqual("Flying", airplane.PlaneStatus);
         }
 
+        [Test]
         public void PlaneAirport_ShouldBeBlank_WhenFlying()
         {
             var airplane = new Airplane();
             Assert.AreEqual("", airplane.CurrentAirport);
         }
 
-        [Category("Airport Tests")]
-
+        [Test]
         public void Airport_ShouldAcceptPlaneInHanger_AddPlaneToAirportHanger()
         {
             var airPlane = new Airplane();
@@ -40,7 +37,7 @@ namespace Tests
             airport.AcceptPlane(airPlane);
             Assert.IsInstanceOf(typeof(Airplane), airport.planeHanger[1]);
         }
-
+        [Test]
         public void Airport_ShouldHaveName_WhenInstantiated()
         {
             var airport = new Airport("Test");

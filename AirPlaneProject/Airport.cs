@@ -12,7 +12,11 @@ namespace AirPlaneProject
             airport = airportName;
         }
 
-        public string airportLocation { get => airport; set => airport = value; }
+        public string airportLocation
+        {
+            get { return airport; }
+            private set { airport = value; }
+        }
         public List<Airplane> planeHanger
         {
             get { return planeHanger; }
