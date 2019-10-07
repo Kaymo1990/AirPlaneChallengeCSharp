@@ -1,5 +1,6 @@
 using AirPlaneProject;
 using NUnit.Framework;
+using System;
 using System.Linq;
 
 namespace Tests
@@ -43,6 +44,11 @@ namespace Tests
             airplane.Land(airport);
             airplane.TakeOff(airport);
             Assert.AreEqual("Flying", airplane.PlaneStatus);
+        }
+
+        [Test] public void TakeOff_ThrowsErrorWhenPlaneNotAtAirport_ThrowError()
+        {
+            Assert.Throws<Exception>(() => airplane.TakeOff(airport));
         }
 
         [Test] public void Land_ShouldUpdatePlaneLocation_ToTestWhenCalled()
