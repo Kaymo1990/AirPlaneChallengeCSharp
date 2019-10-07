@@ -17,11 +17,7 @@ namespace AirPlaneProject
             get { return airport; }
             private set { airport = value; }
         }
-        public List<Airplane> planeHanger
-        {
-            get { return planeHanger; }
-            private set { planeHanger = value; }
-        }
+        public List<Airplane> planeHanger = new List<Airplane>();
 
         public void AcceptPlane(Airplane airplane)
         {
