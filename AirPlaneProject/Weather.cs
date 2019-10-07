@@ -6,7 +6,13 @@ namespace AirPlaneProject
 {
     public class Weather
     {
-        public static bool IsStormy(double stormyChance = 1.1)
+        private double stormyChance;
+
+        public Weather(double _stormyChance)
+            {
+            stormyChance = _stormyChance;
+            }
+        public bool IsStormy()
             { 
             var randomWeatherChance = new Random();
             if (randomWeatherChance.NextDouble() >= stormyChance)

@@ -37,9 +37,9 @@ namespace AirPlaneProject
         }
         
 
-        public void AcceptPlane(Airplane airplane)
+        public void AcceptPlane(Airplane airplane, Weather weather)
         {
-            if (Weather.IsStormy())
+            if (weather.IsStormy())
             {
                 throw new Exception("It is too stormy to land");
             }
@@ -51,9 +51,9 @@ namespace AirPlaneProject
             this.planeHanger.Add(airplane);
         }
 
-        public void EjectPlane(Airplane airplane)
+        public void EjectPlane(Airplane airplane, Weather weather)
         {
-            if (Weather.IsStormy())
+            if (weather.IsStormy())
             {
                 throw new Exception("It is too stormy to take off");
             }
