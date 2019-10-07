@@ -19,7 +19,21 @@ namespace Tests
 
         [Test] public void Land_ShouldReturnLanded_WhenCalled()
         {
-            Assert.AreEqual("Landed", airplane.land());
+            Assert.AreEqual("Landed", airplane.land(airport));
+        }
+
+        [Test]
+        public void Land_ShouldUpdatePlaneLocation_ToTestWhenCalled()
+        {
+            airplane.land(airport);
+            Assert.AreEqual("Test", airplane.CurrentAirport);
+        }
+
+        [Test]
+        public void Land_ShouldUpdateAirportHanger_ToHave1Plane()
+        {
+            airplane.land(airport);
+            Assert.IsInstanceOf(typeof(Airplane), airport.PlaneHanger.ElementAt(0));
         }
 
         [Test] public void PlaneStatus_ShouldBeFlying_WhenCalled()
