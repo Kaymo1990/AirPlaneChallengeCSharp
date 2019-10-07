@@ -12,9 +12,9 @@ namespace AirPlaneProject
 
         public string Land(Airport airport)
         {
-            PlaneStatus = "Landed";
-            CurrentAirport = airport.airportLocation;
             airport.AcceptPlane(this);
+            CurrentAirport = airport.airportLocation;
+            PlaneStatus = "Landed";
             return "Landed";
         }
 

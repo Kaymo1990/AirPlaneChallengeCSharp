@@ -14,7 +14,7 @@ namespace Tests
         [SetUp] public void Init()
         {
             airplane = new Airplane();
-            airport = new Airport("Test");
+            airport = new Airport("Test", 10);
         }
 
 
@@ -94,12 +94,12 @@ namespace Tests
 
         [Test] public void IsStormy_ShouldBeTrue_WhenStormy()
         {
-            Assert.IsTrue(Weather.IsStormy(0));
+            Assert.IsTrue(Weather.IsStormy(0.0));
         }
 
         [Test] public void IsStormy_ShouldBeFalse_WhenNotStormy()
         {
-            Assert.IsFalse(Weather.IsStormy(1));
+            Assert.IsFalse(Weather.IsStormy(1.1));
         }
     }
 }
