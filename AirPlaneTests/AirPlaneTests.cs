@@ -18,6 +18,18 @@ namespace Tests
             Assert.AreEqual("Landed", plane.land());
         }
 
+        public void PlaneStatus_ShouldBeFlying_WhenCalled()
+        {
+            var airplane = new Airplane();
+            Assert.AreEqual("Flying", airplane.PlaneStatus);
+        }
+
+        public void PlaneAirport_ShouldBeBlank_WhenFlying()
+        {
+            var airplane = new Airplane();
+            Assert.AreEqual("", airplane.CurrentAirport);
+        }
+
         [Category("Airport Tests")]
 
         public void Airport_ShouldAcceptPlaneInHanger_AddPlaneToAirportHanger()
@@ -25,7 +37,8 @@ namespace Tests
             var airPlane = new Airplane();
             var airport = new Airport();
             airport.AcceptPlane(airPlane);
-            Assert.IsInstanceOf(typeof(Airplane), airport.PlaneHanger[0])
+            airport.AcceptPlane(airPlane);
+            Assert.IsInstanceOf(typeof(Airplane), airport.planeHanger[1]);
         }
     }
 }

@@ -6,19 +6,15 @@ namespace AirPlaneProject
 {
     public class Airport
     {
-        private readonly IList<Airplane> planeHanger = new List<Airplane>();
-
-        public IEnumerable<Airplane> PlaneHanger
+        public List<Airplane> planeHanger
         {
-            get
-            {
-                return this.planeHanger;
-            }
+            get { return planeHanger; }
+            private set { planeHanger = value; }
         }
 
         public void AcceptPlane(Airplane airplane)
         {
-            this.planeHanger.Add(airplane);
+            planeHanger.Add(airplane);
         }
     }
 }
