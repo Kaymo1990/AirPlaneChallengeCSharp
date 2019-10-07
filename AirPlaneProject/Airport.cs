@@ -1,15 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Text;
 
 namespace AirPlaneProject
 {
     public class Airport
     {
+        private readonly IList<Airplane> planeHanger = new List<Airplane>();
         private string airport;
         public Airport(string airportName)
         {
             airport = airportName;
+        }
+
+        public IReadOnlyCollection<Airplane> PlaneHanger
+        {
+            get
+            {
+                return new ReadOnlyCollection<Airplane>(this.planeHanger);
+            }
         }
 
         public string airportLocation
@@ -17,11 +27,11 @@ namespace AirPlaneProject
             get { return airport; }
             private set { airport = value; }
         }
-        public List<Airplane> planeHanger = new List<Airplane>();
+        
 
         public void AcceptPlane(Airplane airplane)
         {
-            planeHanger.Add(airplane);
+            this.planeHanger.Add(airplane);
         }
     }
 }

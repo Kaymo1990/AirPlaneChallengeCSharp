@@ -1,5 +1,6 @@
 using AirPlaneProject;
 using NUnit.Framework;
+using System.Linq;
 
 namespace Tests
 {
@@ -35,7 +36,7 @@ namespace Tests
         {
             airport.AcceptPlane(airplane);
             airport.AcceptPlane(airplane);
-            Assert.IsInstanceOf(typeof(Airplane), airport.planeHanger[1]);
+            Assert.IsInstanceOf(typeof(Airplane), airport.PlaneHanger.ElementAt(1));
         }
         [Test] public void Airport_ShouldHaveName_WhenInstantiated()
         {
